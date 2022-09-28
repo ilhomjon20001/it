@@ -15,7 +15,13 @@ body {
 }
 
 header {
-  background-color: #000000;
+    margin: auto;
+    width: 1440px;
+    background-color: #000000;
+    background-image: url(../img/kok.png);
+    background-size: 622px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 header .nav {
   align-items: center;

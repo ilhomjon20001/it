@@ -1,0 +1,252 @@
+#about {
+  //   background: #333333;
+  padding: 150px 0;
+
+  .about {
+    &_heading {
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 65px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      margin-bottom: 100px;
+
+      span {
+        color: #d1a954;
+      }
+    }
+
+    &_container {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+
+      &_left {
+        max-width: 445px;
+
+        &_heading {
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 29px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          margin-bottom: 40px;
+          color: #ffffff;
+        }
+
+        &_desc {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #ffffff;
+        }
+      }
+
+      &_center {
+        h3 {
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 29px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          margin-bottom: 40px;
+          width: 280px;
+          color: #ffffff;
+        }
+
+        &_info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+
+          p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+
+            span {
+              color: #d1a954;
+            }
+          }
+        }
+      }
+    }
+    &_nashi{
+      padding-top: 150px;
+      h2{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 100px;
+        span{
+          color: #d1a954;
+        }
+      }
+      &_box{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        transform: translateX(-300px);
+      }
+      &_2018{
+        margin-top: 150px;
+        background-image: url('../img/nashi.bac.png');
+        background-repeat: no-repeat;
+        // background-size: 110px 550px;
+        padding-left: 190px;
+        padding-top: 126px;
+        display: grid;
+        grid-template-columns: repeat(2,0.9fr);
+        align-items: center;
+        &_desk{
+          font-family: 'Open Sans Condensed';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 72px;
+          line-height: 98px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #D1A954;
+        }
+        &_lutshi{
+          width: 540px;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 150%;
+          color: #FFFFFF;
+        }
+      }
+    }
+    &_teatr{
+      padding-top: 150px;
+      h2{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #D1A954;
+        margin-bottom: 100px;
+        span{
+          color: #ffffff;
+        }
+      }
+      &_box{
+        margin-left: 40px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        img{
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phone_width) {
+  #about {
+    padding: 80px 0;
+    .about {
+      &_container {
+        flex-direction: column;
+        &_left{
+          &_heading{
+            text-align: center;
+          }
+          &_desc{
+            text-align: center;
+            width: 504px;
+          }
+        }
+        &_center{
+          h3{
+            margin: auto;
+          }
+          &_info{
+            margin-left: 35px;
+            gap: 50px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 42px;
+          }
+        }
+        &_right{
+          display: none;
+        }
+      }
+      &_nashi{
+        padding-top: 80px;
+        h2{
+          font-weight: 300;
+          font-size: 38px;
+          line-height: 65px;
+          text-align: center;
+          letter-spacing: 0.1em;
+          width: 510px;
+          margin-bottom: 60px;
+        }
+        &_box{
+          padding-left: 25px;
+          transform: translateX(0px);
+        }
+        &_box_none{
+          display: none;
+        }
+        &_2018{
+          background-image: url('../img/phone_nashi_bac.png');
+          background-size: 100% 100%;
+          margin-top: 80px;
+          padding-left: 10px;
+          padding-top: 100px;
+          gap: 24px;
+          img{
+            width: 192px;
+          }
+          &_lutshi{
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 150%;
+            width: 330px;
+          }
+          &_desk{
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 98px;
+          }
+        }
+      }
+      &_teatr{
+        padding-top: 80px;
+        h2{
+          font-size: 35px;
+          margin-bottom: 60px;
+        }
+        &_box{
+          grid-template-columns: repeat(2,1fr);
+          gap: 50px;
+          margin-left: 10px;
+          img{
+            margin-bottom: 0px;
+          }
+          &_none{
+            display: none;
+          }
+        }
+      }
+
+    }
+  }
+}
